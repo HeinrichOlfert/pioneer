@@ -3,19 +3,30 @@ import React from 'react'
 import { MemoryRouter } from 'react-router-dom'
 
 import { ThreadItemBreadcrumbs } from '@/forum/components/threads/ThreadItemBreadcrumbs'
-import { seedForumCategory } from '@/mocks/data/seedForum'
 
 import { mockCategories } from '../../_mocks/forum'
 import { MockQueryNodeProviders } from '../../_mocks/providers'
-import { setupMockServer } from '../../_mocks/server'
+
+jest.mock('@/forum/hooks/useForumMultiQueryCategoryBreadCrumbs', () => ({
+  useForumMultiQueryCategoryBreadCrumbs: jest.fn(() => ({
+    isLoading: false,
+    breadcrumbs: mockCategories,
+  })),
+}))
+// jest.mock('@/forum/queries', () => ({
+//   useGetForumCategoryBreadcrumbQuery: jest.fn(({ variables, skip }) => {
+//     if (skip) return {}
+//     const { id } = variables.where
+//     const category = mockCategories.find((category) => category.id === id)
+
+//     return {
+//       isLoading: false,
+//       data: { forumCategoryByUniqueInput: category },
+//     }
+//   }),
+// }))
 
 describe('ThreadItemBreadcrumbs', () => {
-  const server = setupMockServer({ noCleanupAfterEach: true })
-
-  beforeAll(() => {
-    mockCategories.map((category) => seedForumCategory(category, server.server))
-  })
-
   it('Default', async () => {
     renderComponent('4')
     expect(await screen.findByText('Forum')).toBeDefined()
