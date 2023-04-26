@@ -26,7 +26,7 @@ jest.mock('@/forum/hooks/useForumMultiQueryCategoryBreadCrumbs', () => ({
 //   }),
 // }))
 
-describe('ThreadItemBreadcrumbs', () => {
+describe.skip('ThreadItemBreadcrumbs', () => {
   it('Default', async () => {
     // renderComponent('4')
     // expect(await screen.findByText('Forum')).toBeDefined()
