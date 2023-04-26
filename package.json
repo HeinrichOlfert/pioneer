@@ -45,14 +45,15 @@
     "@polkadot/util-crypto": "9.5.1",
     "@polkadot/types-create": "8.9.1",
     "@polkadot/types-codec": "8.9.1",
-    "@polkadot/wasm-crypto": "6.2.3",
-    "@polkadot/wasm-bridge": "6.2.3",
-    "@polkadot/wasm-crypto-wasm": "6.2.3",
-    "@polkadot/wasm-util": "6.2.3",
+    "@polkadot/wasm-crypto": "6.1.1",
+    "@polkadot/wasm-bridge": "6.1.1",
+    "@polkadot/wasm-crypto-wasm": "6.1.1",
+    "@polkadot/wasm-util": "6.1.1",
     "@polkadot/extension-dapp": "0.44.2-4",
     "bn.js": "^4.11.9",
     "@joystream/js@1.2.0": "patch:@joystream/js@npm%3A1.2.0#./.yarn/patches/@joystream-js-npm-1.2.0-a8795e7496.patch",
-    "@joystream/types": "./packages/joystream-types-v0.20.6.tgz"
+    "@joystream/types": "./packages/joystream-types-v0.20.6.tgz",
+    "injectweb3-connect": "./packages/injectweb3-connect-v1.2.8.tgz"
   },
   "engines": {
     "node": ">=14.18.0",
