@@ -3986,22 +3986,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/extension-dapp@npm:^0.44.1":
-  version: 0.44.1
-  resolution: "@polkadot/extension-dapp@npm:0.44.1"
-  dependencies:
-    "@babel/runtime": ^7.18.3
-    "@polkadot/extension-inject": ^0.44.1
-    "@polkadot/util": ^9.4.1
-    "@polkadot/util-crypto": ^9.4.1
-  peerDependencies:
-    "@polkadot/api": "*"
-    "@polkadot/util": "*"
-    "@polkadot/util-crypto": "*"
-  checksum: e759e8ea954e2be986ca16c7231d84306e2d5f37f444e936b18644011c4c15d765607ec5814eaeab2de65b655eb698b10619438ad58bb79b6c9aef478e93a193
-  languageName: node
-  linkType: hard
-
 "@polkadot/extension-inject@npm:^0.44.1":
   version: 0.44.1
   resolution: "@polkadot/extension-inject@npm:0.44.1"
@@ -4343,7 +4327,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/wasm-crypto@npm:^6.1.1":
+"@polkadot/wasm-crypto@npm:6.2.3":
   version: 6.2.3
   resolution: "@polkadot/wasm-crypto@npm:6.2.3"
   dependencies:
